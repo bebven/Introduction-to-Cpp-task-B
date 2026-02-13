@@ -24,4 +24,20 @@ int main()
 	assert(LinearSearch(67, NewArray, Length) == 0);
 	assert(LinearSearch(88, NewArray, Length) == -1);
 
+	while (true)
+	{
+		int Input;
+		std::cout << "Type a number\n";
+		std::cin >> Input;
+		
+		if (LinearSearch(Input, NewArray, Length) > 0)
+		{
+			std::cout << "\nnumber found at index " << LinearSearch(Input, NewArray, Length) << "\n\n";
+		}
+		else
+		{
+			std::cout << "Number was not found in array\n\n";
+		}
+	}
+
 }
