@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-int LinearSearch(int TargetNum, int InputArray[], int ArrayLength)// loops through an array to find a taget number and returns the index of the number within the array
+int LinearSearch(int TargetNum, int InputArray[], int ArrayLength)// loops through an array to find a taget number and returns the index of the target number within the array
 {
 	for (int i = 0; i < ArrayLength; i++)
 	{
@@ -27,7 +27,7 @@ int main()
 	while (true)
 	{
 		int Input;
-		std::cout << "Type a number\n";
+		std::cout << "Type a number\n\n";
 		std::cin >> Input;
 		
 		if (LinearSearch(Input, NewArray, Length) > 0)
@@ -36,7 +36,7 @@ int main()
 		}
 		else
 		{
-			std::cout << "Number was not found in array\n\n";
+			std::cout << "\nNumber was not found in array\n\n";
 		}
 	}
 
