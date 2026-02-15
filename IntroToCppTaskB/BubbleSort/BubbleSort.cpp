@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 void BubbleSort(int InputArray[], int ArrayLength)
 {
@@ -27,10 +28,11 @@ int main()
 {
     int NewArray[]{ 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
     int Length = sizeof(NewArray) / sizeof(NewArray[0]);
+
     BubbleSort(NewArray, Length);
 
-    for (int iii = 0; iii < Length; iii++)
+    for (int i = 0; i < Length - 1; i++)
     {
-        std::cout << NewArray[iii] <<"\n";
+        assert(NewArray[i] < NewArray[i + 1] );
     }
 }
